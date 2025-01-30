@@ -1,0 +1,39 @@
+<div class="header">
+  <img src="https://www.kesari.in/assets/img/kesari-round-logo.png" alt="">
+  <img src="https://www.kesari.in/assets/img/kesari-text-logo.png" alt="">
+  
+</div>
+
+<div class="container">
+  <h1>Book Festive Season Tours Now!</h1>
+  <p>A restaurant is a place where people can buy and eat food and drinks, and often have a place to sit down. The restaurant industry includes many different types of businesses,<BR/> such as traditional restaurants, bars, coffee shops, gastropubs, and fast food outlets. </p>
+</div>
+
+<div class="parent1">
+  <button (click)="isShow = !isShow">{{ isShow ? 'Hide' : 'Know More...' }}</button>
+  <p *ngIf="isShow">The American continent is full of diversity in cultures,
+     environments, and experiences. This continent is truly diverse in terms of the people
+      who have migrated here from all over the world in pursuit of the American dream.
+       The epitome of all things sparkling, North America, consisting of the USA and Canada,
+        is full of forests of towering trees, sun-blasted deserts, heavenly snow-capped mountains,
+         and loads of sparkling lakes and rivers, as well as the cities teemed with all manner ...
+    </p>
+</div>
+
+<div class="parent">
+  <div class="box" *ngFor="let product of products">
+      <img [src]="product.image"/>
+      <h2>{{product.title}}</h2>
+      <h3>{{product.details}}</h3>
+      <h4>{{product.price}}</h4>
+      <div class="card1">
+        
+        
+      </div>
+    </div>
+
+  </div>
+
+
+<router-outlet></router-outlet>
+<router-outlet />
