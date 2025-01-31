@@ -91,7 +91,7 @@
 }
 .parent .box img{
     width: 100%;
-    height: 300px;
+    height: 200px;
     object-fit: cover;
 }
 .parent .box img:hover{
